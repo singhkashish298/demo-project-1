@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" tyle="text/css"/>
+
+<style>
+    
+    #menu li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        width: 50px; 
+    }
+
+</style>
+</head>
+<body >
+
+    <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="javascript:gotoPage('register','');" >Register</a></li>
+        <li><a href="javascript:gotoPage('contactus','');" >Contactus</a></li>
+
+        
+    
+    </ul>
+    <h1><b>Welcome to Contactus </b> </h1>
+    <span id ="alert" style="display:none;"></span>
+    <form method="post" onsubmit="contactusUser(event);" >
+
+        Name : <input type="text" name="name" id="name" /> <br/><br/>
+        Email : <input type="email" name="email" id="email" /> <br/><br/>
+        Mobile : <input type="number" name="mobile" id="mobile" /> <br/><br/>
+        message<textarea clos="20" rows="5"  id="message"></textarea><br/><br/>
+        <input type="submit" value="save">
+        <input type="reset" value="Clear">
+        </form>
+
+
+</body>
+    <script type="text/javascript" src="./js/crud.js"></script>
+</html>
+
+
+
+
